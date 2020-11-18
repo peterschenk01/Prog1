@@ -10,40 +10,6 @@
 
 
 void simple_mergesort(int* array, int from, int to) {
-	/*if(from >= to){
-		return;
-	}
-
-	int m = (from + to) / 2;
-	simple_mergesort(array, from, m);
-	simple_mergesort(array, m + 1, to);
-
-	int *temp = malloc((to-from)*sizeof(int));
-
-	int i = from, j = m, k = 0;
-	while(i <= m && j <= to){
-		if(array[i] <= array[j]){
-			temp[k++] = array[i++];
-		}
-		else{
-			temp[k++] = array[j++];
-		}
-	}
-	while(i <= m){
-		temp[k++] = array[i++];
-	}
-	while(j <= to){
-		temp[k++] = array[j++];
-	}
-
-	k--;
-	while(k >= 0){
-		array[from + k] = temp[k];
-		k--;
-	}
-
-	free(temp);*/
-
 
     if (from >= to) {
         return;
